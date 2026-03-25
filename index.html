@@ -3,307 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Happy 16th Birthday Sasindu Malmitha!">
-    <title>Happy 16th Birthday, Sasindu Malmitha! 🎉</title>
-    
-    <!-- Tailwind CSS via CDN (super easy, no build tools needed) -->
+    <title>Travel of Srilanka | Welcome to Paradise</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Canvas Confetti for epic celebrations (CDN) -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
         
         :root {
-            --tw-color-primary: #ff00cc;
+            --orange: #ff6b00;
+            --green: #00c853;
+            --turquoise: #00d4ff;
         }
         
         body {
             font-family: 'Poppins', sans-serif;
         }
         
-        .hero-title {
-            font-family: 'Playfair Display', sans-serif;
+        .hero-bg {
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            transition: background-image 1.5s ease-in-out;
         }
         
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-30px) rotate(15deg); }
+        .hero-text {
+            text-shadow: 0 10px 30px rgba(0,0,0,0.6);
         }
         
-        @keyframes sparkle {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 1; }
+        .service-card {
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
         
-        .balloon {
-            animation: float 4s ease-in-out infinite;
-            filter: drop-shadow(0 10px 15px rgba(255, 100, 200, 0.5));
+        .service-card:hover {
+            transform: translateY(-20px) scale(1.08);
+            box-shadow: 0 30px 60px -15px rgb(255 107 0 / 0.4);
         }
         
-        .sparkle {
-            animation: sparkle 1.5s ease-in-out infinite;
+        .district-pill {
+            transition: all 0.4s ease;
         }
         
-        .glass {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+        .district-pill:hover {
+            background-color: var(--orange);
+            color: white;
+            transform: scale(1.15) rotate(3deg);
         }
         
-        .glow-text {
-            text-shadow: 
-                0 0 20px #ff00cc,
-                0 0 40px #00ffff,
-                0 0 60px #ff00cc;
+        .glow {
+            box-shadow: 0 0 40px -10px var(--orange);
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-purple-900 via-pink-700 to-violet-900 text-white overflow-x-hidden">
-    
-    <!-- HERO SECTION - The jaw-dropping welcome -->
-    <section class="min-h-screen flex items-center justify-center relative">
-        
-        <!-- Background decorations -->
-        <div class="absolute inset-0 pointer-events-none overflow-hidden">
-            <!-- Floating balloons -->
-            <div class="balloon absolute text-7xl left-[8%] top-[15%]">🎈</div>
-            <div class="balloon absolute text-6xl left-[18%] top-[35%] delay-300">🎈</div>
-            <div class="balloon absolute text-8xl left-[28%] top-[22%] delay-700">🎉</div>
-            <div class="balloon absolute text-5xl left-[75%] top-[18%] delay-500">🎈</div>
-            <div class="balloon absolute text-7xl right-[12%] top-[45%] delay-1000">🎂</div>
-            <div class="balloon absolute text-6xl right-[22%] top-[28%] delay-400">✨</div>
-            
-            <!-- Sparkles -->
-            <div class="sparkle absolute text-4xl left-[12%] top-[60%]">✨</div>
-            <div class="sparkle absolute text-3xl left-[45%] top-[12%] delay-700">⭐</div>
-            <div class="sparkle absolute text-5xl right-[15%] top-[65%] delay-300">🌟</div>
-            <div class="sparkle absolute text-4xl left-[65%] top-[80%] delay-1000">✨</div>
+<body class="bg-zinc-950 text-white overflow-x-hidden">
+
+    <!-- 24/7 Call Bar -->
+    <div class="bg-gradient-to-r from-orange-600 via-green-500 to-cyan-500 py-4 text-center font-medium text-lg sticky top-0 z-50 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-6 flex flex-wrap items-center justify-center gap-6">
+            <span class="flex items-center gap-3">
+                <i class="fa-solid fa-phone-volume animate-pulse text-2xl"></i>
+                CALL US 24 HOURS
+            </span>
+            <a href="tel:+94776093921" class="hover:underline">+94 776 093 921</a>
+            <a href="tel:+94773885161" class="hover:underline">+94 773 885 161</a>
+            <a href="https://wa.me/94776093921" target="_blank" 
+               class="bg-white text-orange-600 px-8 py-2 rounded-3xl font-bold flex items-center gap-3 hover:scale-110 transition">
+                <i class="fa-brands fa-whatsapp text-3xl"></i> WhatsApp Now
+            </a>
         </div>
-        
-        <div class="max-w-5xl mx-auto text-center px-6 relative z-10">
-            <div class="inline-flex items-center gap-3 mb-6 glass px-8 py-3 rounded-3xl text-xl font-medium tracking-widest">
-                <span class="text-yellow-300">★</span>
-                JUNE 8, 2026
-                <span class="text-yellow-300">★</span>
+    </div>
+
+    <!-- NAV -->
+    <nav class="bg-black/70 backdrop-blur-xl border-b border-white/10 sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="text-5xl">🇱🇰</div>
+                <div>
+                    <h1 class="text-4xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-cyan-400">Travel of Srilanka</h1>
+                    <p class="text-xs text-emerald-400 -mt-1">Paradise on Wheels</p>
+                </div>
             </div>
-            
-            <h1 class="hero-title text-[5.5rem] md:text-[7rem] lg:text-[8rem] leading-none font-bold mb-2 glow-text">
-                Welcome to
+            <div class="hidden md:flex gap-10 text-lg font-medium">
+                <a href="#home" class="hover:text-orange-400 transition">Home</a>
+                <a href="#services" class="hover:text-orange-400 transition">Services</a>
+                <a href="#districts" class="hover:text-orange-400 transition">Districts</a>
+                <a href="#contact" class="hover:text-orange-400 transition">Contact</a>
+            </div>
+            <a href="https://wa.me/94776093921" target="_blank"
+               class="bg-gradient-to-r from-orange-500 to-green-500 px-8 py-4 rounded-3xl font-semibold flex items-center gap-3 hover:brightness-110 transition">
+                <i class="fa-brands fa-whatsapp text-2xl"></i> Book Instantly
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO with rotating beautiful Sri Lanka images -->
+    <section id="home" class="hero-bg h-screen flex items-center relative" style="background-image: url('https://picsum.photos/id/1015/2000/1200');">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/70"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <h1 class="hero-text text-7xl md:text-8xl font-bold leading-none mb-6">
+                Welcome to<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-cyan-300 to-emerald-400">Travel of Srilanka</span>
             </h1>
-            <h1 class="hero-title text-[5.5rem] md:text-[7rem] lg:text-[8rem] leading-none font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-cyan-300 to-purple-300">
-                SASINDU MALMITHA
-            </h1>
+            <p class="text-3xl md:text-4xl font-light mb-12 max-w-3xl mx-auto">Your journey through the Pearl of the Indian Ocean starts here — with comfort, beauty, and unforgettable memories.</p>
             
-            <div class="text-6xl md:text-7xl font-light mb-8 flex items-center justify-center gap-6 flex-wrap">
-                <span>HAPPY</span>
-                <span class="text-8xl md:text-9xl font-bold text-yellow-300 drop-shadow-xl">16TH</span>
-                <span>BIRTHDAY!</span>
-            </div>
-            
-            <p class="text-3xl md:text-4xl max-w-2xl mx-auto mb-12 opacity-90">
-                Turning 16 is legendary. You're not just getting older — you're leveling up!
-            </p>
-            
-            <button onclick="launchBigConfetti()" 
-                    class="group relative px-12 py-6 bg-white text-purple-700 font-bold text-2xl rounded-3xl hover:scale-110 transition-all duration-300 flex items-center gap-4 mx-auto shadow-2xl">
-                <span>CELEBRATE WITH ME</span>
-                <span class="text-4xl group-active:rotate-12 transition">🎉</span>
-            </button>
-            
-            <div class="mt-16 text-sm tracking-[4px] opacity-60 flex items-center justify-center gap-8">
-                <div class="flex items-center gap-2">
-                    <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                    MADE WITH PURE MAGIC
-                </div>
-                <div>NO FRAMEWORKS • JUST AWESOMENESS</div>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="#services" class="bg-white text-black hover:bg-amber-100 text-2xl font-semibold px-12 py-7 rounded-3xl inline-flex items-center gap-4 group">
+                    Explore Our Fleet 
+                    <span class="group-hover:rotate-45 transition">→</span>
+                </a>
+                <a href="https://wa.me/94776093921" target="_blank" 
+                   class="border-4 border-white/80 hover:bg-white/10 text-2xl font-semibold px-12 py-7 rounded-3xl inline-flex items-center gap-4">
+                    <i class="fa-brands fa-whatsapp text-4xl"></i> Message Us
+                </a>
             </div>
         </div>
-        
-        <!-- Scroll indicator -->
-        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
-            <div class="text-xs tracking-widest mb-2">SCROLL FOR MORE SURPRISES</div>
-            <div class="w-6 h-10 border-2 border-white/70 rounded-3xl flex items-center justify-center">
-                <div class="w-1 h-3 bg-white rounded-full animate-bounce"></div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- PERSONAL BIRTHDAY WISH SECTION -->
-    <section class="py-24 px-6 relative">
-        <div class="max-w-4xl mx-auto glass rounded-3xl p-10 md:p-16 text-center">
-            <div class="flex justify-center mb-8 text-6xl">🎂</div>
-            <h2 class="text-5xl font-bold mb-8">Dear Sasindu,</h2>
-            
-            <div class="text-2xl md:text-3xl leading-relaxed text-white/90 space-y-6">
-                <p>Happy 16th Birthday, my incredible friend!</p>
-                <p>You’ve officially entered the “too cool for school but still crushing it” era. From the very first line of code you ever wrote to the stunning websites you build today — you are a true creator, a visionary, and one of the most talented people I know.</p>
-                <p>May this year be filled with late-night coding sessions that actually work, new adventures that make your heart race, and endless success that makes everyone say “That’s Sasindu Malmitha — he’s unstoppable!”</p>
-                <p>You deserve every bit of happiness, every achievement, and every celebration. Keep shining brighter than any screen you design. The world is your canvas, and you’re painting it beautifully.</p>
-                <p class="text-4xl pt-8">Here’s to 16 — the best chapter yet! 🚀</p>
-            </div>
-            
-            <div class="mt-12 text-5xl">— Your friend who is super proud of you ❤️</div>
-        </div>
-    </section>
-    
-    <!-- BEAUTIFUL IMAGE GALLERY + ANIMATIONS -->
-    <section class="py-20 px-6 bg-black/30">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-center text-5xl font-bold mb-16 tracking-widest">A LITTLE VISUAL MAGIC JUST FOR YOU</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Replace these image URLs with your own photos if you want! -->
-                <div class="group relative overflow-hidden rounded-3xl">
-                    <img src="https://picsum.photos/id/1015/800/600" alt="Epic birthday vibes" 
-                         class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
-                        <p class="text-2xl font-medium">Level 16 Unlocked 🎮</p>
-                    </div>
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-3xl">
-                    <img src="https://picsum.photos/id/133/800/600" alt="Future website king" 
-                         class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
-                        <p class="text-2xl font-medium">Your next masterpiece awaits ✨</p>
-                    </div>
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-3xl">
-                    <img src="https://picsum.photos/id/201/800/600" alt="Pure celebration" 
-                         class="w-full h-full object-cover transition-all duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
-                        <p class="text-2xl font-medium">16 candles. Infinite wishes. 🔥</p>
-                    </div>
-                </div>
-            </div>
-            
-            <p class="text-center text-sm mt-10 opacity-60">Feel free to replace the images above with your favorite photos of Sasindu or any birthday memories!</p>
-        </div>
-    </section>
-    
-    <!-- FINAL INTERACTIVE SECTION -->
-    <section class="py-24 px-6 text-center relative">
-        <div class="max-w-2xl mx-auto">
-            <h2 class="text-4xl font-bold mb-8">One last surprise…</h2>
-            <p class="text-2xl mb-12">Click the cake to blow out the candles and watch the magic happen!</p>
-            
-            <div onclick="blowCandles()" class="cursor-pointer mx-auto w-64 h-64 flex items-center justify-center text-9xl hover:scale-110 transition-transform duration-300">
-                🎂
-            </div>
-            
-            <p id="candleMessage" class="text-2xl font-light mt-8 opacity-0 transition-all duration-700">They’re all blown out! Make a wish, Sasindu! 🌟</p>
-        </div>
-    </section>
-    
-    <!-- FOOTER -->
-    <footer class="py-12 text-center border-t border-white/20 bg-black/30">
-        <div class="text-2xl font-medium mb-3">Created by Ridma ❤️</div>
-        <p class="text-sm opacity-60">The best birthday website your favorite website creator has ever seen 😉</p>
-        <p class="mt-6 text-xs opacity-40">Made with pure HTML + Tailwind + JS • Hosted on GitHub Pages</p>
-    </footer>
-    
-    <script>
-        // Tailwind configuration
-        function initTailwind() {
-            return {
-                config(userConfig = {}) {
-                    return {
-                        content: [],
-                        theme: {
-                            extend: {}
-                        },
-                        ...userConfig
-                    }
-                }
-            }
-        }
-        
-        // Launch massive confetti
-        function launchBigConfetti() {
-            const duration = 4 * 1000;
-            const end = Date.now() + duration;
-            
-            (function frame() {
-                confetti({
-                    particleCount: 8,
-                    angle: 60,
-                    spread: 55,
-                    origin: { x: 0 }
-                });
-                confetti({
-                    particleCount: 8,
-                    angle: 120,
-                    spread: 55,
-                    origin: { x: 1 }
-                });
-                
-                if (Date.now() < end) {
-                    requestAnimationFrame(frame);
-                }
-            }());
-            
-            // Extra burst in the middle
-            setTimeout(() => {
-                confetti({ particleCount: 150, spread: 120, startVelocity: 50 });
-            }, 800);
-        }
-        
-        // Blow out candles animation
-        function blowCandles() {
-            const message = document.getElementById('candleMessage');
-            
-            // Firework confetti explosion
-            for (let i = 0; i < 6; i++) {
-                setTimeout(() => {
-                    confetti({
-                        particleCount: 80,
-                        spread: 100,
-                        scalar: 1.2,
-                        ticks: 80
-                    });
-                }, i * 80);
-            }
-            
-            // Show the message
-            message.style.opacity = 1;
-            message.style.transform = 'translateY(0)';
-            
-            // Change cake emoji to blown-out version
-            const cake = event.currentTarget;
-            cake.textContent = '🕯️💨🎉';
-            
-            // Reset after a while
-            setTimeout(() => {
-                cake.textContent = '🎂';
-                message.style.opacity = 0;
-            }, 5000);
-        }
-        
-        // Auto-start celebration when page loads
-        window.onload = function() {
-            initTailwind();
-            
-            // Initial confetti rain
-            setTimeout(() => {
-                launchBigConfetti();
-            }, 800);
-            
-            // Occasional surprise confetti every 4 seconds
+
+        <!-- Subtle image changer -->
+        <script>
+            const hero = document.querySelector('.hero-bg');
+            const images = [
+                'https://picsum.photos/id/1015/2000/1200', // beach
+                'https://picsum.photos/id/1016/2000/1200', // sigiriya style
+                'https://picsum.photos/id/1018/2000/1200', // tea hills
+                'https://picsum.photos/id/133/2000/1200'  // scenic road
+            ];
+            let index = 0;
             setInterval(() => {
-                if (Math.random() > 0.4) {
-                    confetti({
-                        particleCount: 60,
-                        spread: 80,
-                        scalar: 0.8
-                    });
-                }
-            }, 4000);
+                index = (index + 1) % images.length;
+                hero.style.backgroundImage = `url('${images[index]}')`;
+            }, 6000);
+        </script>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-24 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="bg-gradient-to-r from-orange-500 to-green-500 text-white px-8 py-3 rounded-full text-sm font-bold tracking-wider">OUR BEAUTIFUL FLEET</span>
+                <h2 class="text-6xl font-bold mt-6 mb-4">Choose Your Perfect Ride</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="service-card bg-zinc-800 rounded-3xl overflow-hidden glow">
+                    <img src="https://picsum.photos/id/1074/800/500" alt="Flex Car" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-semibold mb-2">Flex Car / Van</h3>
+                        <p class="text-zinc-400">Spacious comfort for families & groups. Island-wide tours made easy.</p>
+                        <div class="mt-8 text-4xl font-bold text-orange-400">From LKR 4,500/day</div>
+                    </div>
+                </div>
+
+                <div class="service-card bg-zinc-800 rounded-3xl overflow-hidden glow">
+                    <img src="https://picsum.photos/id/1075/800/500" alt="Mini Car" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-semibold mb-2">Mini Car</h3>
+                        <p class="text-zinc-400">Agile, fuel-efficient & perfect for couples or city exploration.</p>
+                        <div class="mt-8 text-4xl font-bold text-emerald-400">From LKR 3,200/day</div>
+                    </div>
+                </div>
+
+                <div class="service-card bg-zinc-800 rounded-3xl overflow-hidden glow">
+                    <img src="https://picsum.photos/id/1076/800/500" alt="Sedan" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-semibold mb-2">Sedan Car</h3>
+                        <p class="text-zinc-400">Premium comfort & style for business or leisure travel.</p>
+                        <div class="mt-8 text-4xl font-bold text-cyan-400">From LKR 3,800/day</div>
+                    </div>
+                </div>
+
+                <div class="service-card bg-zinc-800 rounded-3xl overflow-hidden glow relative">
+                    <img src="https://picsum.photos/id/1077/800/500" alt="Luxury" class="w-full h-56 object-cover">
+                    <div class="p-8">
+                        <h3 class="text-3xl font-semibold mb-2">Luxury & Other Vehicles</h3>
+                        <p class="text-zinc-400">SUVs, 4×4, buses & custom packages — tell us your dream ride!</p>
+                        <a href="https://wa.me/94776093921" target="_blank" 
+                           class="mt-8 block bg-gradient-to-r from-orange-500 to-pink-500 text-center py-5 rounded-2xl font-bold text-xl">Request Custom</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISTRICTS -->
+    <section id="districts" class="py-24 bg-gradient-to-br from-orange-950 via-zinc-900 to-green-950">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-6xl font-bold mb-4">Services Across All 25 Districts</h2>
+            <p class="text-2xl text-zinc-400 mb-12">From Jaffna to Hambantota — we cover every corner of beautiful Sri Lanka</p>
             
-            console.log('%c🎉 Website ready for Sasindu! This is going to be his BEST birthday ever.', 'color:#ff00cc; font-family:monospace; font-size:13px');
-        };
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 text-lg">
+                <div class="district-pill bg-white/10 backdrop-blur-md border border-white/20 py-6 rounded-3xl font-medium">Colombo</div>
+                <div class="district-pill bg-white/10 backdrop-blur-md border border-white/20 py-6 rounded-3xl font-medium">Galle</div>
+                <div class="district-pill bg-white/10 backdrop-blur-md border border-white/20 py-6 rounded-3xl font-medium">Kandy</div>
+                <div class="district-pill bg-white/10 backdrop-blur-md border border-white/20 py-6 rounded-3xl font-medium">Nuwara Eliya</div>
+                <div class="district-pill bg-white/10 backdrop-blur-md border border-white/20 py-6 rounded-3xl font-medium">Sigiriya / Anuradhapura</div>
+                <div class="district-pill bg-white/10 backdrop-blur-md border border-white/20 py-6 rounded-3xl font-medium">Trincomalee</div>
+                <div class="district-pill bg-white/10 backdrop-blur-md border border-white/20 py-6 rounded-3xl font-medium">Jaffna</div>
+                <div class="district-pill bg-white/10 backdrop-blur-md border border-white/20 py-6 rounded-3xl font-medium">Hambantota</div>
+                <div class="district-pill bg-white/10 backdrop-blur-md border border-white/20 py-6 rounded-3xl font-medium">Badulla</div>
+                <div class="district-pill bg-white/10 backdrop-blur-md border border-white/20 py-6 rounded-3xl font-medium">Matara</div>
+                <div class="district-pill bg-white/10 backdrop-blur-md border border-white/20 py-6 rounded-3xl font-medium">Ratnapura</div>
+                <div class="district-pill bg-white/10 backdrop-blur-md border border-white/20 py-6 rounded-3xl font-medium">Polonnaruwa</div>
+                <!-- Add the rest similarly if you want all 25 visible -->
+            </div>
+            
+            <p class="mt-16 text-3xl font-light">✅ Pickup & drop anywhere in Sri Lanka — airports, hotels, or your doorstep</p>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact" class="bg-black py-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-16">
+            <div>
+                <h3 class="text-4xl font-bold mb-8">Weerasinghe Suranga Nuwan</h3>
+                <div class="space-y-6 text-xl">
+                    <p><i class="fa-solid fa-envelope text-orange-400 mr-4"></i> wsuranga715@gmail.com</p>
+                    <p><i class="fa-brands fa-whatsapp text-green-400 mr-4"></i> +94 776 093 921 (Message Only)</p>
+                    <p><i class="fa-solid fa-phone text-cyan-400 mr-4"></i> 24 Hours: +94 776 093 921 / +94 773 885 161</p>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <div class="text-8xl mb-8">🇱🇰</div>
+                <p class="text-3xl font-light">Travel of Srilanka</p>
+                <p class="text-zinc-400 mt-4">Making your Sri Lankan dreams come true with safe, comfortable travel.</p>
+            </div>
+            
+            <div class="text-center md:text-right">
+                <a href="https://wa.me/94776093921" target="_blank" 
+                   class="inline-block bg-gradient-to-r from-orange-500 to-emerald-500 text-3xl font-bold px-16 py-8 rounded-3xl hover:scale-105 transition">
+                    OPEN WHATSAPP &amp; START YOUR JOURNEY
+                </a>
+            </div>
+        </div>
+        
+        <div class="text-center text-xs text-zinc-500 mt-20">
+            © 2026 Travel of Srilanka • Created for Weerasinghe Suranga Nuwan
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
     </script>
 </body>
 </html>
